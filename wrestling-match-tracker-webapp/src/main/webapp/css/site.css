@@ -1,0 +1,328 @@
+﻿body {
+	display: block;
+	width:95%;
+	background-color: white;
+	font-family: sans-serif;
+	font-size: 14px;
+	/* border: .5px solid lightgrey; */
+}
+
+header {
+	diplay: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+
+header p {
+	color: #FFFFFF;
+	/*font-size: 12pt;*/
+}
+
+header img {
+	height: 110px;
+
+	
+	
+}
+.nav-container{
+	display: block;
+	width: 100%;
+}
+.logo{
+	text-align: center;
+}
+
+nav {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #10322A;
+}
+
+
+li {
+	padding-bottom: 11px;
+	padding-top: 11px;
+	padding-right:35px;
+}
+
+li a {
+	padding: 7px;
+	color: #10322A;
+	border-radius: 10px;
+	background-color: white;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	vertical-align: middle;
+}
+li a:hover{
+	background-color: lightgrey;
+	color: black;	
+}
+/*  designed for mobile first.  */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+nav li a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav:after {
+	clear: both;
+}
+
+
+
+
+.post{
+	padding: 25px;
+	text-align: left;
+	background-color: lightgrey;
+	border: .5px solid grey;
+	border-radius: 5px;
+	margin-top:30px;
+
+}
+.post-text{
+	align-text: left;
+}
+
+.content-area-result img{
+	width: 250px;
+	height: 250px;
+	border-color: #FFFFFF;
+	border-width: 8px;
+	border-style: solid;
+}
+
+.capitalize{
+	text-transform: capitalize;
+}
+
+
+table{
+	width: 100%;
+	padding-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+table div{
+	color: black;
+	text-align: center;
+}
+th{
+	color: black;
+	line-weight: bold;
+}
+.super-coach img{
+	padding-top: 60px;
+	padding-bottom: 15px;
+	height: 200px;
+	
+/* using webkit to rotate a phone image 90 degrees to upright */
+	-webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    text-align: center;
+    
+}
+.super-coach{
+	width:100%;
+	text-align:center;
+	padding-left: 5%;
+}
+
+.roster-hover-button{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	/* border: .5px solid lightgrey; */
+	text-align:center;
+	border-radius: 5px;
+}
+.roster-hover-button a{
+	padding: 10px;
+	/* border: .5px solid lightgrey; */
+	text-align:center;
+	border-radius: 5px;
+	color:black;
+	text-decoration: none;
+	text-wrap: none;
+}
+tr{
+	width:100%;
+}
+	
+
+
+.roster-hover-button a:hover {
+	color: white;
+	background-color: #10322A;
+}
+
+.match-hover-button a{
+	padding: 10px;
+	/* border: .5px solid lightgrey; */
+	text-align:center;
+	border-radius: 5px;
+	color:black;
+	text-decoration: none;
+	text-wrap: none;
+}
+
+.match-hover-button a:hover{
+	color: white;
+	background-color: #10322A;
+}
+.burley-caption{
+	color: black;
+	font-size: .7rem;
+	font-style: italic;
+	text-wrap: wrap;
+	text-align: center;
+}
+
+.all-matches-table{
+	width:100%;
+	padding-left:5%;
+	text-align:left;
+}
+
+.all-matches-table td{
+	padding-top: 15px;
+}
+
+td.td-match{
+	width: 30%;
+	text-align: left;
+}
+th{
+	width: 25%;
+}
+th.th-opponent{
+	width: 50%;
+	text-align: left;
+}
+td.td-opponent div{
+	text-align: left;
+}						/*  -- attempt to nowrap the text in the vs
+.td-match-opponent{
+	width: 25%;
+	text-align: left;
+	white-space: nowrap;
+	margin-left: 0;
+}
+*/
+
+td.td-match-opponent{
+	text-align: left;
+	width: 50%;
+}
+
+.td-match div{
+	text-align: left;
+}
+td.td-event{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;       
+    }
+th.hide{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;       
+    }
+
+.all-match-stats-container{
+	text-align: center;
+}
+
+
+/*trying to make this not display in mobile size
+.td-event{
+	dispay: block;
+	width: 40%;
+	text-align: left;
+	margin-left: 0;
+}
+ /* not hiding <th>
+.hide{
+	display:none;
+}
+*/
+
+/* i-pad size */
+@media only screen and (min-width: 40em){ 
+
+nav ul{
+		flex-direction: row;
+		justify-content:space-evenly;
+		padding-left: 0;
+	}
+
+table{
+		width:70%;
+	}
+.post{
+		width:50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+.all-matches-table{
+		width:100%;
+		padding-left:5%;
+		text-align:left;
+	}
+
+.all-matches-table td{
+		padding-top: 15px;
+	}
+
+.td-match{
+		width: 20%;
+		text-align: left;
+	}
+
+.td-match div{
+		text-align: left;
+	}
+
+
+.td-event div{
+		text-align: left;
+		margin-left:0;
+	}
+
+ /* when I attempt to change these values to show, it alters my default media size */
+td.td-event{
+        display: block;
+        width: 20%;
+        opacity: 100%;
+        visibility: visibile;       
+    }
+th.hide{
+        display: block;
+        width: 20%;
+        opacity: 100%;
+        visibility: visible;       
+    }
+
+}
+/* this will be in flex-grid */
+@media only screen and  (min-width: 64em){ 
+	}
