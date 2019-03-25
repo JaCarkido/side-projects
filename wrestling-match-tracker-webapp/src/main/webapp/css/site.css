@@ -250,6 +250,33 @@ th.hide{
 	text-align: center;
 }
 
+h1 .th-match-stats-home{
+	color: green;
+}
+
+h1 .th-match-stats-opponent{
+	color: red;
+}
+.match-stats-card{
+	text-align: left;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 3%;
+	background-color: lightgrey;
+	border: .5px solid grey;
+	border-radius: 5px;
+	
+}
+
+.match-stats-card div{
+	font-size: 1rem;
+	padding-bottom: 4px;
+	
+}
+.date{
+	text-align: center;
+	text-decoration: underline;
+}
 
 /*trying to make this not display in mobile size
 .td-event{

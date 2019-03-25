@@ -83,7 +83,15 @@ public class Match {
 	 * @return the outcome
 	 */
 	public String getOutcome() {
-		return outcome;
+		String result = "";
+		if(outcome.equalsIgnoreCase("w")){
+			result = "Win";
+			return result;
+		}
+		else {
+			result = "Loss";
+			return result;
+		}
 	}
 	/**
 	 * @param outcome the outcome to set

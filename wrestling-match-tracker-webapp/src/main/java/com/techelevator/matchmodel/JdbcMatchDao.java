@@ -38,6 +38,9 @@ public class JdbcMatchDao implements MatchDao {
 		return matchList;
 	}
 
+	
+// Can I call * and still use the mapper or do i need to only query the specific items in the mapper?	
+	
 	@Override
 	public Match getOneMatch(String matchId) {
 		Long id = Long.parseLong(matchId);
